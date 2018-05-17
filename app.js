@@ -1,13 +1,8 @@
-const banner = document.querySelector('#page-banner');
+const bookList = document.querySelector('#book-list');
 
-console.log('#page-banner node type is:', banner.nodeType);
-console.log('#page-banner node name is:', banner.nodeName);
-console.log('#page-banner has child nodes:', banner.hasChildNodes());
-const clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner);
+console.log('book-list next sibling is:',bookList.nextSubling);
+console.log('book-list next element sibling is:',bookList.nextElementSibling);
 
-
-
-
-
- 
+console.log('book-list previous sibling is:',bookList.previousSibling);
+console.log('book-list previous element sibling is;',bookList.previousElementSibling);
+bookList.previousElement.querySelector('p').innerHTML += '<br/>Too cool for everyone else!'
