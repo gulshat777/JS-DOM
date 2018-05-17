@@ -1,6 +1,6 @@
 var btns = document.querySelectorAll('book-list.delete');
 Array.from(btns).forEach(function(btn){
-    btn.addEventListener('click,function(e){
+    btn.addEventListener('click',function(e){
         const li = e.targetElement;
         li.parentNode.remoteChild(li)
     })
